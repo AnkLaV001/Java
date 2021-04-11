@@ -10,7 +10,6 @@ import java.io.IOException;
 public class WeatherAoi {
     public static void main(String[] args) throws IOException {
         OkHttpClient okHttpClient = new OkHttpClient();
-        MediaType JSON = MediaType.parse("JSON");
         double lat = 59.9386; //широта в градусах
         double lon = 30.3141; //долгота в градусах
         int limit = 5; //срок прогноза
@@ -30,3 +29,7 @@ public class WeatherAoi {
 
 
 }
+
+//    Второй вариант выполнения ДЗ - доработать свою программу, выводящую погоду, из 6 урока так, чтобы в консоль
+//    выводилась информация в читабельном формате на ваше усмотрение - например "Сегодня в Санкт-Петербурге 5 градусов
+//    тепла". Главное - распарсить json ответ, достать оттуда нужные данные.
