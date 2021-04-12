@@ -17,19 +17,19 @@ public class CityCoordinates {
     String format = "json";
 
     public void getCityCoordinates() throws IOException {
-        Scanner scanner = new Scanner(System.in, "UTF-8");
+        Scanner scanner = new Scanner(System.in);
         while (true){
             System.out.println("Введите название города");
             String city = scanner.nextLine();
             HttpUrl apiUrl = new HttpUrl.Builder()
                     .scheme("https")
                     .host("geocode-maps.yandex.ru")
-                    .addPathSegment("1.x/")
+                    .addPathSegment("1.x")
                     .addQueryParameter("apikey", tokenCity)
                     .addQueryParameter("geocode", city)
                     .addQueryParameter("format", format)
                     .addQueryParameter("results", "1")
-                    .addQueryParameter("bbox", "31.449585,42.122836~-172.018738,78.928302")
+//                    .addQueryParameter("bbox", "31.449585,42.122836~-172.018738,78.928302")
                     .build();
 //            String apiUrl = "https://geocode-maps.yandex.ru/1.x/?apikey=" + tokenCity + "&geocode=" + city + "&format=" + format + "&results=1&bbox=31.449585,42.122836~-172.018738,78.928302";
             System.out.println(apiUrl);
@@ -38,7 +38,9 @@ public class CityCoordinates {
                     .build();
             Response responseCity = okHttpClient.newCall(requestCity).execute();
             String responseCityString = responseCity.body().string();
-//            String cityCoordinates = objectMapper.readTree(responseCityString);
+            System.out.println(responseCityString);
+            String cityCoordinates = objectMapper.readTree(responseCityString).get("/GeoObject").at("/pos").asText();
+            System.out.println(cityCoordinates);
         }
 
     }
