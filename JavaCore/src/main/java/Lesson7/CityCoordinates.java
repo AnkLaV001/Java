@@ -5,10 +5,8 @@ import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
-import okio.Utf8;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class CityCoordinates {
     private static final OkHttpClient okHttpClient = new OkHttpClient();
@@ -16,11 +14,8 @@ public class CityCoordinates {
     private static final String tokenCity = "0c7a4d58-ee9d-43d1-beb3-c0b26a2826cf";
     String format = "json";
 
-    public void getCityCoordinates() throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        while (true){
-            System.out.println("Введите название города");
-            String city = scanner.nextLine();
+    public String getCityCoordinates(String city) throws IOException {
+        while (true) {
             HttpUrl apiUrl = new HttpUrl.Builder()
                     .scheme("https")
                     .host("geocode-maps.yandex.ru")
@@ -38,9 +33,10 @@ public class CityCoordinates {
                     .build();
             Response responseCity = okHttpClient.newCall(requestCity).execute();
             String responseCityString = responseCity.body().string();
-            System.out.println(responseCityString);
-            String cityCoordinates = objectMapper.readTree(responseCityString).get("/GeoObject").at("/pos").asText();
+//            System.out.println(responseCityString);
+            String cityCoordinates = objectMapper.readTree(responseCityString).at("/response/GeoObjectCollection/featureMember/0/GeoObject/Point/pos").asText();
             System.out.println(cityCoordinates);
+            return cityCoordinates;
         }
 
     }
