@@ -24,13 +24,13 @@ public class WeatherApi {
                 .url(apiUrl)
                 .addHeader("X-Yandex-API-Key", token)
                 .build();
-        System.out.println(requestWeather);
+//        System.out.println(requestWeather);
 
 
         Response responseBooking = okHttpClient.newCall(requestWeather).execute();
 //        System.out.println(responseBooking.code());
 //        System.out.println(responseBooking.headers());
-        System.out.println(responseBooking.body().string());
+//        System.out.println(responseBooking.body().string());
         return responseBooking.body().string();
     }
 

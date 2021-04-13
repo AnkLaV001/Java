@@ -1,5 +1,8 @@
 package Lesson7;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Fact {
     private int temp;
     private String condition;
