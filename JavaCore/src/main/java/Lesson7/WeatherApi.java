@@ -24,7 +24,7 @@ public class WeatherApi {
                 .url(apiUrl)
                 .addHeader("X-Yandex-API-Key", token)
                 .build();
-//        System.out.println(requestWeather);
+        System.out.println(requestWeather);
 
 
         Response responseBooking = okHttpClient.newCall(requestWeather).execute();
