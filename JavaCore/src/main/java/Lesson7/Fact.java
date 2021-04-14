@@ -16,6 +16,19 @@ public class Fact {
     }
 
     public String getCondition() {
+        switch (this.condition){
+            case "overcast":
+                condition = "пасмурно";
+                break;
+            case "clear":
+                condition = "ясно";
+                break;
+            case "rain":
+                condition = "rain";
+                break;
+            default:
+                break;
+        }
         return condition;
     }
 

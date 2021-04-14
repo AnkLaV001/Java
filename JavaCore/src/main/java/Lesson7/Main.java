@@ -20,7 +20,7 @@ public class Main {
 //            String weatherNow = weatherApi.weatherJson(city);
             WeatherJson weatherResponse = objectMapper.readValue(weatherApi.weatherJson(city), WeatherJson.class);
 //            weatherApi.weatherJson(city);
-            System.out.println("На данный момент в " + city + " "+ weatherResponse.getFactObject().getTemp() + " C и " + weatherResponse.getFactObject().getCondition());
+            System.out.println("На данный момент в " + city + " " + weatherResponse.getFactObject().getTemp() + " C и " + weatherResponse.getFactObject().getCondition());
         }
     }
 }
