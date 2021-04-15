@@ -24,7 +24,13 @@ public class Fact {
                 condition = "ясно";
                 break;
             case "rain":
-                condition = "rain";
+                condition = "дождь";
+                break;
+            case "cloudy":
+                condition = "облачно с прояснениями";
+                break;
+            case "partly-cloudy":
+                condition = "малооблачно";
                 break;
             default:
                 break;

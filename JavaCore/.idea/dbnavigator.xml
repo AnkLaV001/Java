@@ -17,18 +17,27 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="windows-1251" />
+      <charset value="UTF-8" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="7bfe3af6-33e2-4b6c-af3b-ffc5ba2626c6">
+        <schema name="main" object-types="constraint, index, column, view, dataset trigger, table" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="7bfe3af6-33e2-4b6c-af3b-ffc5ba2626c6">
-      <console name="Connection" type="STANDARD" schema="" session="Main" />
+      <console name="Connection" type="STANDARD" schema="main" session="Main"><![CDATA[create table weather (id integer primary key autoincrement, city text, localdate text, temperature real, weather_text text)
+select * from weather
+
+insert  into weather (city, localdate, temperature, weather_text) values ('Москва', '15-04-2021' , 19, 'пасмурно')
+
+select * from weather where city like 'Липецк']]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -78,14 +87,14 @@
           <port value="1234" />
           <database value="database" />
           <files>
-            <file path="$PROJECT_DIR$/src/main/java/Lesson8/weather" schema="main" />
+            <file path="$PROJECT_DIR$/weather.db" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
           <deprecated-pwd value="" />
         </database>
         <properties>
-          <auto-commit value="false" />
+          <auto-commit value="true" />
         </properties>
         <ssh-settings>
           <active value="false" />
