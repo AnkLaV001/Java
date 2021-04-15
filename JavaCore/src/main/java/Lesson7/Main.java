@@ -12,15 +12,15 @@ public class Main {
         WeatherApi weatherApi = new WeatherApi();
         while (true) {
             System.out.println("Введите название города");
-            String city = scanner.nextLine();
-            if (city.equals("выход") || city.equals("exit")) {
+            String  userInput = scanner.nextLine();
+            if ( userInput.equals("выход") ||  userInput.equals("exit")) {
                 System.out.println("Спасибо за пользованием программой");
                 break;
             }
-//            String weatherNow = weatherApi.weatherJson(city);
-            WeatherJson weatherResponse = objectMapper.readValue(weatherApi.weatherJson(city), WeatherJson.class);
-//            weatherApi.weatherJson(city);
-            System.out.println("На данный момент в " + city + " " + weatherResponse.getFactObject().getTemp() + " C и " + weatherResponse.getFactObject().getCondition());
+//            String weatherNow = weatherApi.weatherJson( userInput);
+            WeatherJson weatherResponse = objectMapper.readValue(weatherApi.weatherJson( userInput), WeatherJson.class);
+//            weatherApi.weatherJson( userInput);
+            System.out.println("На данный момент в " +  userInput + " " + weatherResponse.getFactObject().getTemp() + " C и " + weatherResponse.getFactObject().getCondition());
         }
     }
 }

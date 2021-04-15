@@ -25,7 +25,7 @@ public class dbConnection {
     public boolean saveWeatherData(WeatherJson weatherJson) throws SQLException {
         try (Connection connection = DriverManager.getConnection("jdbc:sqlite:geekbrains.db")) {
             PreparedStatement saveWeather = connection.prepareStatement(insertWeather);
-            saveWeather.setString(1, .getCity());
+            saveWeather.setString(1, weatherJson.getCity());
             saveWeather.setString(2, weatherJson.getLocalDate());
             saveWeather.setDouble(3, weatherJson.getFactObject().getTemp());
             saveWeather.setString(4, weatherJson.getFactObject().getCondition());
