@@ -16,6 +16,25 @@ public class Fact {
     }
 
     public String getCondition() {
+        switch (this.condition){
+            case "overcast":
+                condition = "пасмурно";
+                break;
+            case "clear":
+                condition = "ясно";
+                break;
+            case "rain":
+                condition = "дождь";
+                break;
+            case "cloudy":
+                condition = "облачно с прояснениями";
+                break;
+            case "partly-cloudy":
+                condition = "малооблачно";
+                break;
+            default:
+                break;
+        }
         return condition;
     }
 

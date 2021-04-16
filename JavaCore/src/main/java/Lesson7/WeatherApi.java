@@ -18,7 +18,7 @@ public class WeatherApi {
         double lat = Double.parseDouble(coordinates[1]); //широта в градусах
         double lon = Double.parseDouble(coordinates[0]); //долгота в градусах
         int limit = 5; //срок прогноза
-        String token = "92656a0c-ba15-43d0-b4b4-a04d521e1873";
+        String token = "92656a0c-ba15-43d0-b4b4-a04d521e1873"; //Второй ключ: ce09edeb-132e-40d6-a0ae-1c1026b2466e
         String apiUrl = "https://api.weather.yandex.ru/v2/forecast?lat=" + lat + "&lon=" + lon + "&limit=" + limit;
         Request requestWeather = new Request.Builder()
                 .url(apiUrl)
