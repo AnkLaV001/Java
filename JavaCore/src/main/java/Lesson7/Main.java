@@ -29,8 +29,9 @@ public class Main {
             WeatherJson weatherResponse = objectMapper.readValue(weatherApi.weatherJson(userInput), WeatherJson.class);
 //            weatherApi.weatherJson( userInput);
             dbConnection.saveWeatherData(weatherResponse);
-            System.out.println("На данный момент в " + weatherResponse.getGeoObjectObject().getLocalityObject().getName() + " " + weatherResponse.getFactObject().getTemp() + " C и " + weatherResponse.getFactObject().getCondition());
             dbConnection.getSavedWeatherData(userInput);
+
+            System.out.println("На данный момент в " + weatherResponse.getGeoObjectObject().getLocalityObject().getName() + " " + weatherResponse.getFactObject().getTemp() + " C и " + weatherResponse.getFactObject().getCondition());
         }
     }
 }

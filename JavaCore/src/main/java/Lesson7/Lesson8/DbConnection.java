@@ -37,13 +37,14 @@ public class DbConnection {
     public void getSavedWeatherData(String city) throws SQLException {
         Connection connection = DriverManager.getConnection("jdbc:sqlite:" + DB_NAME);
         Statement statement = connection.createStatement();
-        ResultSet resultSet = statement.executeQuery("jdbc:sqlite:" + DB_NAME);
+        ResultSet resultSet = statement.executeQuery("select * from weather where city like '" + city + "'");
         while (resultSet.next()){
-            String date = resultSet.getString(0);
-            String cityName = resultSet.getString(1);
-            double temp = resultSet.getDouble(2);
-            String condition = resultSet.getString(3);
-            String getSavedWeatherData = date + " " + cityName + " " + temp + " " + condition;
+            String date = resultSet.getString(3);
+            String cityName = resultSet.getString(2);
+            double temp = resultSet.getDouble(4);
+            String condition = resultSet.getString(5);
+            String getSavedWeatherData = date + " " + cityName + " " + temp + "C " + condition;
+            System.out.println(getSavedWeatherData);
         }
 //        String getSavedWeatherData = statement.executeQuery("select * from weather where city like '" + city + "'").toString();
 //        return getSavedWeatherData;
