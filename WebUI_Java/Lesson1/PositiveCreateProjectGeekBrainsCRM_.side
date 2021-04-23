@@ -219,40 +219,47 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "582bce9a-e48f-4479-80a3-ca4d301aeca6",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5"
+    }, {
       "id": "9ccadb27-7630-4103-ae63-b1f5fdf6eb3c",
       "comment": "",
-      "command": "mouseOver",
-      "target": "xpath=//select[@name=\"crm_project[rp]\"]",
+      "command": "//mouseOver",
+      "target": "xpath=//span[contains(text(), 'Выберите руко')]/following-sibling::select",
       "targets": [],
       "value": ""
     }, {
       "id": "87aed157-e937-49d8-8133-a15b0f5d8fb8",
       "comment": "",
-      "command": "",
-      "target": "",
+      "command": "//click",
+      "target": "xpath=//span[contains(text(), 'Выберите руко')]/following-sibling::select",
       "targets": [],
       "value": ""
     }, {
       "id": "d93d810e-a928-4a6c-804e-a0b00185e44e",
       "comment": "",
       "command": "click",
-      "target": "xpath=//select[@name=\"crm_project[rp]\"]",
-      "targets": [
-        ["id=crm_project_rp-uid-608085afe36c5", "id"],
-        ["name=crm_project[rp]", "name"],
-        ["css=#crm_project_rp-uid-608085afe36c5", "css:finder"],
-        ["xpath=//select[@id='crm_project_rp-uid-608085afe36c5']", "xpath:attributes"],
-        ["xpath=//div[@id='uniform-crm_project_rp-uid-608085afe36c5']/select", "xpath:idRelative"],
-        ["xpath=//div[7]/div[2]/div/select", "xpath:position"]
-      ],
+      "target": "xpath=//span[contains(text(), 'Выберите руко')]/following-sibling::select",
+      "targets": [],
       "value": ""
     }, {
       "id": "04b1eeb0-d956-45dd-9309-0940bbde0961",
       "comment": "",
-      "command": "click",
-      "target": "xpath=//option[text()='Applanatest1 Applanatest1 Applanatest1']",
+      "command": "select",
+      "target": "xpath=//span[contains(text(), 'Выберите руко')]/following-sibling::select",
       "targets": [],
-      "value": ""
+      "value": "label=Applanatest Applanatest Applanatest"
+    }, {
+      "id": "6fdd33c1-5565-436f-8f25-9b70733e3ff6",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5"
     }, {
       "id": "6965c7e2-75bf-495d-b001-bf965c057ba0",
       "comment": "",
@@ -270,7 +277,7 @@
     }, {
       "id": "a3a2828e-0c47-4eb0-a38a-4d6f473111b7",
       "comment": "",
-      "command": "clickAt",
+      "command": "doubleClickAt",
       "target": "xpath=//select[@name=\"crm_project[administrator]\"]",
       "targets": [
         ["id=crm_project_administrator-uid-608085afbab2a", "id"],
@@ -288,6 +295,13 @@
       "target": "xpath=//option[text()='Applanatest1 Applanatest1 Applanatest1']",
       "targets": [],
       "value": ""
+    }, {
+      "id": "208da33b-aaf0-473f-b1a0-4681a7c2bf81",
+      "comment": "",
+      "command": "pause",
+      "target": "",
+      "targets": [],
+      "value": "5"
     }, {
       "id": "f1228149-59ab-4b25-9a89-a4ac87d39553",
       "comment": "",
