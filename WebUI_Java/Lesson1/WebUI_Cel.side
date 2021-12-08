@@ -181,24 +181,28 @@
       ],
       "value": ""
     }, {
+      "id": "7fb2377c-633b-4a23-9e6f-b08c6402be51",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "xpath=//div[text()='Alya']",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "01be3522-a42b-486c-aa5a-6c597688a2bb",
       "comment": "",
       "command": "//mouseOver",
-      "target": "xpath=//div[text()='\"Континент+\"']",
+      "target": "xpath=//div[text()='Alya']",
       "targets": [],
       "value": ""
     }, {
       "id": "d28c9143-2ae1-44c1-989a-f2f2ca21d233",
       "comment": "",
       "command": "click",
-      "target": "xpath=//div[text()='\"Континент+\"']",
+      "target": "xpath=//div[text()='Alya']",
       "targets": [
-        ["id=crm_contact_jobTitle-uid-607f342d43713", "id"],
-        ["name=crm_contact[jobTitle]", "name"],
-        ["css=#crm_contact_jobTitle-uid-607f342d43713", "css:finder"],
-        ["xpath=//input[@id='crm_contact_jobTitle-uid-607f342d43713']", "xpath:attributes"],
-        ["xpath=//form[@id='crm_contact-uid-607f342d4ec89']/div[2]/div[3]/div/div/div[2]/fieldset/div[2]/div[2]/div[2]/input", "xpath:idRelative"],
-        ["xpath=//div[2]/div[2]/div[2]/input", "xpath:position"]
+        ["css=.select2-arrow", "css:finder"],
+        ["xpath=//div[@id='s2id_crm_contact_company-uid-619d2a42b6312']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//a/span[2]", "xpath:position"]
       ],
       "value": ""
     }, {
