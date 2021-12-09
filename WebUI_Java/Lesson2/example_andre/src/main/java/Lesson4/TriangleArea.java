@@ -26,7 +26,6 @@ public class TriangleArea {
 
     public static float formulaTriangleArea (int a , int b , int c){
         int p = (( a + b + c ) / 2);
-        float s = (float) Math.sqrt(p * (p - a) * (p - b) * (p - c));
-        return s;
+        return (float) Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 }

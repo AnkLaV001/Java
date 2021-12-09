@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38338005-fefc-4729-b0f6-4f259636b2a7" name="Default Changelist" comment="Lesson3_3_DairyLogin_NewMessage">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson4/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson4/TriangleArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson4/TriangleAreaTest.java" afterDir="false" />
+    <list default="true" id="38338005-fefc-4729-b0f6-4f259636b2a7" name="Default Changelist" comment="Lesson4">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson4/TriangleArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson4/TriangleArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Lesson4/TriangleAreaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lesson4/TriangleAreaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -44,11 +44,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Lesson4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\geekbrains\Тестирование ПО\Git\Java\WebUI_Java\Lesson2\example_andre\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TriangleArea">
+  <component name="RunManager" selected="JUnit.TriangleAreaTest.calculateSquerWentOneNumberIsNull">
     <configuration name="DairyLoginTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Lesson3.DairyLoginTest" />
       <module name="example_andre" />
@@ -101,8 +104,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TriangleAreaTest.calculateSquerWentOneNumberIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example_andre" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson4" />
+      <option name="MAIN_CLASS_NAME" value="Lesson4.TriangleAreaTest" />
+      <option name="METHOD_NAME" value="calculateSquerWentOneNumberIsNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TriangleAreaTest.calculateSquerWentOneNumberIsNull" />
         <item itemvalue="Application.TriangleArea" />
         <item itemvalue="Application.DairyLoginTest" />
         <item itemvalue="Application.DairyNewNoteTest" />
@@ -182,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638388948932</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lesson4">
+      <created>1638942886605</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1638942886605</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -202,6 +229,7 @@
     <MESSAGE value="Lesson3_1" />
     <MESSAGE value="Lesson3_2" />
     <MESSAGE value="Lesson3_3_DairyLogin_NewMessage" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson3_3_DairyLogin_NewMessage" />
+    <MESSAGE value="Lesson4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
   </component>
 </project>

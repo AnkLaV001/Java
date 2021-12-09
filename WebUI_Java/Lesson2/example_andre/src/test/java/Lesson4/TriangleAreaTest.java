@@ -6,9 +6,10 @@ import org.junit.jupiter.api.Test;
 
 public class TriangleAreaTest {
     @Test
-    void calculateSquerWentOneNumberIsNull(){
-        float result = TriangleArea.formulaTriangleArea(7, 10, 0);
-        assertTrue
+    //@DisplayedName ("") При добавлении пишет "Cannot resolve symbol 'DisplayedName'"
+    void calculateAreaWenAllNumberIsNotNull(){
+        System.out.println("");
+        Assertions.assertEquals(TriangleArea.formulaTriangleArea(3, 4, 5), 6.0);
     }
 
 }
