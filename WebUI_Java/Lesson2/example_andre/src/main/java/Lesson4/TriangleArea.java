@@ -18,8 +18,6 @@ public class TriangleArea {
 
         float s = formulaTriangleArea(a, b ,c);
 
-
-
         System.out.println("Площать треугольника со сторонами: " + a + (", ") + b + (", ") + c + (" , равна: ") + s);
 
     }
