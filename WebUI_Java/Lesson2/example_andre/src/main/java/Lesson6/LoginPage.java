@@ -11,6 +11,7 @@ public class LoginPage extends BaseView{
     private final static String loginFormLocatorId = "loginform-username";
     private final static String passwordFormLocatorId = "loginform-password";
     private final static String captchaFrameLocatorXpath = "//iframe[@title='reCAPTCHA']";
+    private final static String captchaCheckboxLocatorClassName = "recaptcha-checkbox-border";
     private final static String loginButtonLocatorId = "login_btn";
 
     @FindBy(id = loginFormLocatorId)
@@ -25,6 +26,9 @@ public class LoginPage extends BaseView{
     @FindBy(id = loginButtonLocatorId)
     private WebElement loginButton;
 
+    @FindBy(className = captchaCheckboxLocatorClassName)
+    private WebElement captchaCheckbox;
+
     public LoginPage fillLoginInput(String login){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id(loginFormLocatorId)));
         loginInput.sendKeys(login);
@@ -38,6 +42,11 @@ public class LoginPage extends BaseView{
 
     public LoginPage switchToCaptchaFrame(){
         driver.switchTo().frame(captchaFrame);
+        return this;
+    }
+
+    public LoginPage pressToCaptchaCheckbox(){
+        captchaCheckbox.click();
         return this;
     }
 
