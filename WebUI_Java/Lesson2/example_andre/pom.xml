@@ -27,6 +27,12 @@
             <artifactId>webdrivermanager</artifactId>
             <version>5.0.3</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/ru.yandex.qatools.htmlelements/htmlelements-matchers -->
+        <dependency>
+            <groupId>ru.yandex.qatools.htmlelements</groupId>
+            <artifactId>htmlelements-matchers</artifactId>
+            <version>1.20.0</version>
+        </dependency>
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -55,7 +61,12 @@
             <version>1.2.7</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
