@@ -1,5 +1,6 @@
 package Lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,7 @@ public class LandingPage extends BaseView{
     @FindBy(xpath = "//a[.='Вход']")
     WebElement loginButton;
 
+    @Step("Нажать на кнопку войти на посадочной странице")
     public LandingPage clickLoginButton(){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[.='Вход']")));
         loginButton.click();

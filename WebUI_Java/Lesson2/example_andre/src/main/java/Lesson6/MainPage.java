@@ -1,5 +1,6 @@
 package Lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +27,7 @@ public class MainPage extends BaseView{
     @FindBy(xpath = diaryNewsLocatorXpath)
     private WebElement diaryNews;
 
+    @Step("Выбрать одну новость из списка Новости дневников")
     public SpiritDiaryPage chooseOneOfDiaryNews(){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(diaryNewsHeadingLocatorXpath)));
         webDriverWait.until(d ->d.findElements(By.xpath(diaryNewsLocatorXpath)).size() > 0);

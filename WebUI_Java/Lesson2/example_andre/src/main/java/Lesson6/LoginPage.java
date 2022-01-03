@@ -1,5 +1,6 @@
 package Lesson6;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,27 +30,32 @@ public class LoginPage extends BaseView{
     @FindBy(className = captchaCheckboxLocatorClassName)
     private WebElement captchaCheckbox;
 
+    @Step("Заполнить поле Login")
     public LoginPage fillLoginInput(String login){
         webDriverWait.until(ExpectedConditions.visibilityOfElementLocated(By.id(loginFormLocatorId)));
         loginInput.sendKeys(login);
         return this;
     }
 
+    @Step("Заполнить поле Password")
     public LoginPage fillPasswordInput(String password){
         passwordInput.sendKeys(password);
         return this;
     }
 
+    @Step("Переключиться на iFrame с капчей")
     public LoginPage switchToCaptchaFrame(){
         driver.switchTo().frame(captchaFrame);
         return this;
     }
 
+    @Step("Нажать на чекбокс проверки капчи")
     public LoginPage pressToCaptchaCheckbox(){
         captchaCheckbox.click();
         return this;
     }
 
+    @Step("Нажать на кнопку Войти")
     public MainPage pressLoginButton(){
         loginButton.click();
         return new MainPage(driver);
