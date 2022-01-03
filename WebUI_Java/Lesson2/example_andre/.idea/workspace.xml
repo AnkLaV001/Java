@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38338005-fefc-4729-b0f6-4f259636b2a7" name="Default Changelist" comment="Lesson4">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson5/DairyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson5/DragAndDropTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestSources/Sources.java" afterDir="false" />
+    <list default="true" id="38338005-fefc-4729-b0f6-4f259636b2a7" name="Default Changelist" comment="Lesson6">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson6/SpiritDiaryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson6/DiaryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/BaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/MainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../../.." value="Web_UI_L4" />
+        <entry key="$PROJECT_DIR$/../../.." value="Web_UI_L5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -61,7 +61,7 @@
       <recent name="D:\geekbrains\Тестирование ПО\Git\Java\WebUI_Java\Lesson2\example_andre\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DragAndDropTest.drugAndDrop">
+  <component name="RunManager" selected="JUnit.DiaryTest.openMainPageTest">
     <configuration name="DairyTest.addToQuote" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="example_andre" />
       <extension name="coverage">
@@ -110,6 +110,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DiaryTest.openMainPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="example_andre" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lesson6" />
+      <option name="MAIN_CLASS_NAME" value="Lesson6.DiaryTest" />
+      <option name="METHOD_NAME" value="openMainPageTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DragAndDropTest.drugAndDrop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="example_andre" />
       <extension name="coverage">
@@ -126,29 +142,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleAreaTest.calculateSquerWentOneNumberIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="example_andre" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Lesson4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Lesson4" />
-      <option name="MAIN_CLASS_NAME" value="Lesson4.TriangleAreaTest" />
-      <option name="METHOD_NAME" value="calculateSquerWentOneNumberIsNull" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiaryTest.openMainPageTest" />
         <item itemvalue="JUnit.DragAndDropTest.drugAndDrop" />
         <item itemvalue="JUnit.DairyTest.allDiary" />
         <item itemvalue="JUnit.DairyTest.addToQuote" />
         <item itemvalue="JUnit.DairyTest.login" />
-        <item itemvalue="JUnit.TriangleAreaTest.calculateSquerWentOneNumberIsNull" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1639029266860</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lesson5">
+      <created>1639343169519</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1639343169519</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Lesson6">
+      <created>1639720308766</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1639720308766</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +273,8 @@
     <MESSAGE value="Lesson3_2" />
     <MESSAGE value="Lesson3_3_DairyLogin_NewMessage" />
     <MESSAGE value="Lesson4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson4" />
+    <MESSAGE value="Lesson5" />
+    <MESSAGE value="Lesson6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson6" />
   </component>
 </project>
