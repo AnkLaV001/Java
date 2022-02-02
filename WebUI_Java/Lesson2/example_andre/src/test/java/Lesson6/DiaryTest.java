@@ -1,5 +1,6 @@
 package Lesson6;
 
+import Lesson7.LessonLogger;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -7,9 +8,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class DiaryTest {
     WebDriver webDriver;
+    EventFiringWebDriver eventFiringWebDriver;
     LandingPage landingPage;
     LoginPage loginPage;
     MainPage mainPage;
@@ -25,11 +28,14 @@ public class DiaryTest {
 
     @BeforeEach
     void setupDriver(){
-        webDriver = BaseView.webDriver();
+        eventFiringWebDriver = new EventFiringWebDriver(BaseView.webDriver());
+        eventFiringWebDriver.register(new LessonLogger());
+        eventFiringWebDriver.get(DIARY_BASE_PAGE_URL);
+        //webDriver = BaseView.webDriver();
+        //webDriver.get(DIARY_BASE_PAGE_URL);
         landingPage = new LandingPage(webDriver);
         loginPage = new LoginPage(webDriver);
-        mainPage = new MainPage(webDriver);
-        webDriver.get(DIARY_BASE_PAGE_URL);
+        //mainPage = new MainPage(webDriver);
     }
 
     @Test

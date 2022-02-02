@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38338005-fefc-4729-b0f6-4f259636b2a7" name="Default Changelist" comment="Lesson6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Lesson6/SpiritDiaryPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson6/DiaryTest.java" afterDir="false" />
+    <list default="true" id="38338005-fefc-4729-b0f6-4f259636b2a7" name="Default Changelist" comment="Lesson4">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lesson7/LessonLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/allure.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/BaseView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/BaseView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/LandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lesson6/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lesson6/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Lesson6/DiaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lesson6/DiaryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../../.." value="Web_UI_L5" />
+        <entry key="$PROJECT_DIR$/../../.." value="Web_UI_L6" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -94,18 +97,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DairyTest.login" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiaryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="example_andre" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Lesson5.*" />
+          <option name="PATTERN" value="Lesson6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="Lesson5" />
-      <option name="MAIN_CLASS_NAME" value="Lesson5.DairyTest" />
-      <option name="METHOD_NAME" value="login" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="Lesson6" />
+      <option name="MAIN_CLASS_NAME" value="Lesson6.DiaryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,10 +147,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DiaryTest.openMainPageTest" />
+        <item itemvalue="JUnit.DiaryTest" />
+        <item itemvalue="JUnit.DairyTest.addToQuote" />
         <item itemvalue="JUnit.DragAndDropTest.drugAndDrop" />
         <item itemvalue="JUnit.DairyTest.allDiary" />
-        <item itemvalue="JUnit.DairyTest.addToQuote" />
-        <item itemvalue="JUnit.DairyTest.login" />
       </list>
     </recent_temporary>
   </component>

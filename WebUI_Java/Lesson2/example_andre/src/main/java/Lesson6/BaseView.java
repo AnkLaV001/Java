@@ -10,16 +10,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BaseView {
-    WebDriver driver = webDriver();
-    WebDriverWait webDriverWait;
-    Actions actions;
+        WebDriver driver;
+        WebDriverWait webDriverWait;
+        Actions actions;
 
-    public BaseView(WebDriver driver) {
-        this.driver = driver;
-        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        actions = new Actions(driver);
-        PageFactory.initElements(driver, this);
-    }
+        public BaseView(WebDriver driver) {
+            this.driver = driver;
+            webDriverWait = new WebDriverWait(driver, 5);//Duration.ofSeconds(5));
+            actions = new Actions(driver);
+            PageFactory.initElements(driver, this);
+        }
+
 
     public static WebDriver webDriver(){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
